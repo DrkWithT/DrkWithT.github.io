@@ -1,0 +1,6 @@
+# .gitignore
+# Project: DrkWithT.github.io
+# By: Derek Tan
+
+# Ignore other git directories.
+.DS_Store
