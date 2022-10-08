@@ -55,8 +55,9 @@ a.nav-link {
   border-bottom-style: solid;
   border-bottom-color: #a0583c;
   padding: 8px;
-  transition: border-bottom-color 1s;
-  transition-timing-function: linear;
+  transition: border-bottom-color 0.5s;
+  transition-timing-function: ease-in;
+  text-decoration: none;
   color: inherit;
 }
 
@@ -65,7 +66,8 @@ a.nav-link:visited {
 }
 
 a.nav-link:hover {
-  border-bottom-color: rgb(225, 115, 25);
+  background-color: #be623c;
+  border-bottom-color: rgb(235, 140, 60);
 }
 
 /* Main Column */
@@ -124,17 +126,6 @@ h3.section-title {
   text-align: left;
   font-family: inherit;
   color: inherit;
-}
-
-@keyframes nod {
-  0% {top: 0px}
-  50% {top: 6px}
-  100% {top: 0px}
-}
-
-h2.secondary-title:hover {
-  animation-name: nod;
-  animation-duration: 1s;
 }
 
 h3.section-title:hover::before {
