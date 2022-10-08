@@ -3,12 +3,15 @@
 ## About Project:
 This is the README for my GitHub Page containing my design notes, and this is the repo for my personal GitHub Page.
 
+## Landing Page:
+ - [Go Here](https://drkwitht.github.io/index.html)
+
 ## Misc. Info:
  3. Languages: HTML, CSS, JS (ES6 flavor!)
  1. Editor: VS Code.
  2. VCS: Git for Windows.
 
-## Notes:
+## Design Notes:
   1. Design Style:
    - Usual material design with some CSS transitions and animations.
    - Color Set: [Palette 1](https://colorpalettes.net/color-palette-4281/)
