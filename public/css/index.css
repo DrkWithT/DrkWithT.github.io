@@ -1,0 +1,131 @@
+/*
+  index.css
+  Derek Tan
+*/
+
+/* Main Variables */
+:root {
+  --default-font: Arial, sans-serif;
+  --special-font: Calibri;
+}
+
+/* Base Styles */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--default-font);
+  font-size: 16pt;
+  background-color: #212123;
+  color: white;
+}
+
+/* Header Styles */
+header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: #a0583c;
+  color: #ccb9b1;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a.nav-link {
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  padding: 8px;
+  transition: border-color 1s;
+  transition-timing-function: linear;
+}
+
+a.nav-link:visited {
+  border-color: rgb(225, 75, 25);
+}
+
+a.nav-link:hover {
+  border-color: rgb(225, 115, 25);
+}
+
+/* Main Column */
+main#scrollable {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 56px;
+  border-left: 2px dotted #616063;
+  border-right: 2px dotted #616063;
+  padding: 0 10%;
+  font-family: var(--special-font);
+  font-family: 14pt;
+  color: inherit;
+}
+
+section.page-section {
+  display: block;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+div.captioned-img {
+  display: block;
+  text-align: center;
+  padding: 8px;
+}
+
+img#profile-image {
+  aspect-ratio: 1 / 1;
+  border: 2px solid lightgray;
+  border-radius: 16px;
+  width: 120px;
+  transition: width 1s;
+}
+
+img#profile-image:hover {
+  width: 140px;
+}
+
+h1 + h2.secondary-title, h3.section-title {
+  position: relative;
+  top: 0px;
+  display: block;
+  text-align: center;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+}
+
+@keyframes nod {
+  0% {top: 0px}
+  50% {top: 4px}
+  100% {top: 0px}
+}
+
+h1:hover, h2.secondary-title:hover {
+  animation-name: nod;
+  animation-duration: 1s;
+}
+
+p:hover::before {
+  content: "&para;&nbsp;";
+  color: rgb(225, 115, 25);
+}
