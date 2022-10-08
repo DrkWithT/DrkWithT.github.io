@@ -1,0 +1,10 @@
+# .gitattributes
+# Project: DrkWithT.github.io
+# By: Derek Tan
+
+# Auto handle text.
+text=auto
+
+# Handle images as binary.
+public/img/*.jpg binary
+public/img/*.png binary
