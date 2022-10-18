@@ -125,7 +125,7 @@ h3.section-title {
   color: inherit;
 }
 
-h3.section-title:hover::after {
-  content: ": Read!";
+h3.section-title:hover::before {
+  content: "-> ";
   color: rgb(225, 115, 25);
 }

@@ -6,16 +6,27 @@
 ol, ul {
   display: block;
   margin-bottom: 8px;
+  border-left: 2px solid whitesmoke;
   padding: 12px;
   color: inherit;
+  transition: border-color 0.5s;
+}
+
+ol:hover {
+  border-color: rgb(225, 115, 25);
+}
+
+ul:hover {
+  border-color: rgb(230, 70, 20);
 }
 
 ol > li, ul > li {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 8px;
-  text-align: center;
+  text-align: left;
   color: inherit;
+  transition: color 1s;
 }
 
 ol > li:hover {
@@ -23,5 +34,5 @@ ol > li:hover {
 }
 
 ul > li:hover {
-  color: rgb(230, 100, 55);
+  color: rgb(230, 70, 20);
 }
