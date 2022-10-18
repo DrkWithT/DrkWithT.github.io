@@ -36,7 +36,6 @@ header {
   display: block;
   margin: 0;
   border: none;
-  border-radius: 8px;
   padding: 4px;
   background-color: #a0583c;
   color: #ccb9b1;
@@ -126,7 +125,7 @@ h3.section-title {
   color: inherit;
 }
 
-h3.section-title:hover::before {
-  content: "Read: ";
+h3.section-title:hover::after {
+  content: ": Read!";
   color: rgb(225, 115, 25);
 }
