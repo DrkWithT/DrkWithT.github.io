@@ -1,0 +1,27 @@
+/*
+  lists.css
+  Derek Tan
+*/
+
+ol, ul {
+  display: block;
+  margin-bottom: 8px;
+  padding: 12px;
+  color: inherit;
+}
+
+ol > li, ul > li {
+  display: block;
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+  color: inherit;
+}
+
+ol > li:hover {
+  color: rgb(225, 115, 25);
+}
+
+ul > li:hover {
+  color: rgb(230, 100, 55);
+}
